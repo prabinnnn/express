@@ -7,6 +7,9 @@ const app = express();
 app.get("/", (req, res) => {
   res.json({ msg: "hello world" });
 });
+app.get("/prabin", (req, res) => {
+  res.json({ msg: "hello prabin" });
+});
 app.listen(8000, () => {
   console.log("application is running");
 });
