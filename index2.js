@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
-app.get("/", (req, res) => {
-  res.json({ msg: "dssdcdcjsdncscnjcdjncs" });
+app.get("/", (res, req) => {
+  res.json({ msg: "idcscdsnjcndsjcnsdcsdn" });
 });
-app.listen(3000, () => {
-  console.log("app is runing");
+app.listen(7777, () => {
+  console.log("app is running");
 });
