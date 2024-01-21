@@ -1,5 +1,5 @@
 const randomnumber = (num) => {
-  const newrandom = (num) => {
+  const newrandom = () => {
     const numb = Math.floor(Math.random() * 16 + 1);
     return numb;
   };
