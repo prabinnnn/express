@@ -3,10 +3,10 @@ const app = express();
 app.get("/", (req, res) => {
   res.json({ msg: "hello" });
 });
-app.get("/:fname/:lname", (req, res) => {
-  const fname = req.params.fname;
-  const lname = req.params.lname;
-  res.json({ msg: `hello ${fname} ${lname}` });
+app.get("/:num1/:num2", (req, res) => {
+  const { num1, num2 } = req.params;
+  const sum = Number(num1) + Number(num2);
+  res.json({ msg: `the ${sum} is ....` });
 });
 app.listen(7000, () => {
   console.log("app is running");
