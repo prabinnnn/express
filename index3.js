@@ -3,7 +3,7 @@ const app = express();
 app.get("/", (req, res) => {
   res.json({ msg: "hello" });
 });
-app.get("/:address", (req, res) => {
+app.get("/:name", (req, res) => {
   const data = req.params.name;
   res.json({ msg: `hello ${data}` });
 });
