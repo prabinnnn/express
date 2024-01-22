@@ -1,8 +1,10 @@
-const randomnumber = (num) => {
-  const newrandom = () => {
-    const numb = Math.floor(Math.random() * 16 + 1);
-    return numb;
-  };
-  console.log(newrandom(num));
+const diplay = (result) => {
+  document.getElementById("result").innerHTML("result");
 };
-randomnumber();
+const findnewnumber = (callbackfn) => {
+  const result = Math.floor(math.random() * 16 + 1);
+  callbackfn(result);
+};
+const newdisplay = () => {
+  console.log("display");
+};
