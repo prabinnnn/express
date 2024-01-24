@@ -15,5 +15,4 @@ router.use("/book", bookrouter);
 router.use("/blog", blogrouter);
 router.use("/categories", categoriesrouter);
 router.use("/roles", rolesrouter);
-
 module.exports = router;
